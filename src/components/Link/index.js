@@ -1,9 +1,7 @@
 import React from 'react'
 
-function Link (props) {
+export function Link (props) {
   return (
     <a href={props.url}>{props.text}</a>
   )
 }
-
-export default Link
