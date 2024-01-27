@@ -5,6 +5,7 @@ const ToDoInput = (props) => {
   const {onSubmit: onSubmitProp, placeholder} = props
 
   function onSubmit (e) {
+    // simnnce onsubmmit event form par lga hai but data capture input ka karna hai hence namee value input field ka hoga
     console.log(e.target.todoText.value)
     // stops the  evernt ftom being passed on further
     e.stopPropagation()
