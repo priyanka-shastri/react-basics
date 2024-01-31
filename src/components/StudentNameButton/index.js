@@ -1,6 +1,6 @@
 import React from 'react'
 
-const buttonFunction = (props) => {
+const ButtonFunction = (props) => {
 
   const {onClickFunction}= props
  
@@ -11,4 +11,4 @@ const buttonFunction = (props) => {
   )
 }
 
-export default buttonFunction
+export default ButtonFunction
