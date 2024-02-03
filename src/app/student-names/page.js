@@ -6,7 +6,7 @@ import StudentNameButton from '../../components/StudentNameButton'
 import StudentNameTable from '../../components/StudentNameTable'
 
 const StudentName = () => {
-  const [text, setText] = useState()
+  const [text, setText] = useState("")
   const [inputArray, setinputArray] = useState([])
 
   function onChange (e) {
@@ -19,6 +19,8 @@ const StudentName = () => {
     newInputArray.push(text)
     setinputArray(newInputArray)
     console.log (newInputArray)
+
+    setText ("")
   }
 
   // passing a function as an argument of map function
@@ -40,7 +42,7 @@ const StudentName = () => {
   return (
     <div>
       {/* can  also be written as onChange = { (e) => onChange(e)} */}
-      <StudentNameInput placeholder = "Enter student's name" onChange={onChange} />
+      <StudentNameInput placeholder = "Enter student's name" onChange={onChange} value = {text}/>
       <StudentNameButton onClickFunction = {onClickFunction} />
       <StudentNameTable tableData = {tableData}  />
     </div>
