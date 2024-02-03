@@ -15,11 +15,13 @@ const StudentName = () => {
 
  
   const onClickFunction = (e) => {
+    if(text === "") {
+      return
+    }
     const newInputArray = [...inputArray]
     newInputArray.push(text)
     setinputArray(newInputArray)
     console.log (newInputArray)
-
     setText ("")
   }
 
